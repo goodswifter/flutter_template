@@ -1,0 +1,4 @@
+watch: true
+
+output: lib/const/r.dart
+# output: lib/const/resource.dart
