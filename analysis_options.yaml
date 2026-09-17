@@ -64,8 +64,6 @@ linter:
     # 去除不必要的lambdas表达式
     # 这个在json解析会报错, 不建议打开
     # - unnecessary_lambdas
-    # 函数默认值尽量使用=来赋值
-    - prefer_equal_for_default_values
     # 使用函数声明的方式将函数和变量做绑定
     - prefer_function_declarations_over_variables
 
@@ -78,8 +76,6 @@ linter:
     - prefer_final_fields
     # 可以考虑使用..这样方式，而不是返回this指针的方式来实现流式调用
     - avoid_returning_this
-    # 避免返回null
-    - avoid_returning_null
 
     # 十一、构造函数
     # 避免构造函数使用{}做空实现，可以直接使用；
@@ -128,8 +124,6 @@ linter:
     - await_only_futures
     # 避免catch 空实现
     - empty_catches
-    # 集合的remove需要传递符合集合的类型的参数
-    - list_remove_unrelated_type
     # case中避免重复
     - no_duplicate_case_values
     # deprecated函数或者变量，需要给出明确的注释
@@ -144,8 +138,6 @@ linter:
     - valid_regexps
 
     # 十八、Recommended集合融合部分
-    # 非空变量使用required关键字
-    - always_require_non_null_named_parameters
     # 对重写的方法和变量加override注释
     - annotate_overrides
     # 重写方法的参数不要改变参数名称
@@ -233,5 +225,3 @@ linter:
     - unnecessary_null_aware_assignments
     # 去掉不必要的圆括号
     - unnecessary_parenthesis
-    # 避免不安全HTML的API
-    - unsafe_html
